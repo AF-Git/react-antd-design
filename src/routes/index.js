@@ -18,6 +18,7 @@ import CreateAudio from '../views/CreateAudio'
 import CreateVideo from '../views/CreateVideo'
 import ImageSelect from '../components/ImageSelect'
 import Demo from '../views/Demo'
+import CustomMenu from '../hooks/CustomMenu'
 const CRouter = () => {
     
     return (
@@ -40,6 +41,7 @@ const CRouter = () => {
             <Route path='/createAudio' component={CreateAudio}></Route>
             <Route path='/createVideo' component={CreateVideo}></Route>
             <Route path='/demo' component={Demo}></Route>
+            <Route path='/customMenu' component={CustomMenu}></Route>
             <Route render={() => <Redirect to="/information" />} />
         </Switch>
     );
